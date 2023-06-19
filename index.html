@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+        <section class="weather">
+            <video autoplay muted loop src="" type="video/mp4" id="background-video">
+                Your browser does not support the video tag.
+            </video>
+            <div class="data">
+                <h1 class="temperature"></h1>
+                <div class="data__location">
+                    <h2></h2>
+                    <span></span>
+                </div>
+                <div class="data__status">
+                    <img src="https://cdn.weatherbit.io/static/img/icons/c01d.png" alt="" id="img">
+                    <span class="weather__description"></span>
+                </div>
+            </div>
+            <div class="weather__info">
+                <form class="info__input">
+                    <input type="text" placeholder="Search city..." id="query">
+                    <button id="search__city"><i class="bi bi-search"></i></button>
+                </form>
+                <div class="info__details">
+                    <h3>Weather Details</h3>
+                    <div class="details__properties">
+                        <span>Humidity:</span>
+                        <span>Wind Speed:</span>
+                        <span>Wind Direction:</span>
+                        <span>Clouds:</span>
+                        <span>Precipitation:</span>
+                        <span>Air Quality:</span>
+                        <span>UV Index:</span>
+                    </div>
+                    <div class="details__values">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <span class="copy">© Santiago Cortés, 2023</span>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
